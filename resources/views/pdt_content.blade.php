@@ -9,7 +9,7 @@
       <div class="swipe-wrap">
         @foreach($pdt_images as $pdt_image)
         <div>
-          <a href="javascript:;"><img class="img-responsive" src="{{$pdt_image->image_path}}" /></a>
+          <a href="javascript:;"><img class="img-responsive" src="{{URL('/').$pdt_image->image_path}}" /></a>
         </div>
         @endforeach
       </div>

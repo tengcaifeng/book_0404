@@ -6,6 +6,12 @@ Route::get('/welcome',function(){
 Route::get('cangxi_news','View\NewsController@show');
 Route::get('about_gy','View\NewsController@aboutgy');
 
+
+/*Route::get('/category', 'View\BookController@toCategory');*/
+Route::get('/product/category_id/{category_id}', 'View\BookController@toProduct');
+Route::get('/product/{product_id}', 'View\BookController@toPdtContent');
+
+
 Route::group(['prefix' => 'service'], function () {
   Route::post('upload/{type}', 'Service\UploadController@uploadFile');
 });

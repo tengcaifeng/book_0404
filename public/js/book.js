@@ -26,9 +26,9 @@ function onMenuItemClick(index) {
   var weuiActionsheet = $('#weui_actionsheet');
   hideActionSheet(weuiActionsheet, mask);
   if(index == 1) {
-      location.href = '/cangxi_news';
+      location.href = 'http://tcf.natapp1.cc/book_0404/public/';
   }else if(index == 2) {
-      location.href = '/about_gy';
+      location.href = 'http://tcf.natapp1.cc/book_0404/public/about_gy';
   }else if(index == 3){
       location.href = 'http://www.baidu.com';
      /* $('.bk_toptips').show();

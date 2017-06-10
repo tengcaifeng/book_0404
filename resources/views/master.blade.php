@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
   <title>@yield('title')</title>
-  <link rel="stylesheet" href="/css/weui.css">
-  <link rel="stylesheet" href="/css/swipe.css">
+  <link rel="stylesheet" href="{{ URL('/') }}/css/weui.css">
+    <link rel="stylesheet" href="{{ URL('/') }}/css/book.css">
+  <link rel="stylesheet" href="{{ URL('/') }}/css/swipe.css">
 </head>
 <body>
 <div class="page">
@@ -27,11 +28,11 @@
         </div>
     </div>
 </div>
-<img class="bk_back" src="/images/back.png" alt="" onclick="history.go(-1);">
+<img class="bk_back" src="{{ URL('/') }}/images/back.png" alt="" onclick="history.go(-1);">
 <div class="bk_fix_bottom" onclick="onMenuClick();"></div>
 </body>
-<script src="/js/jquery-1.11.2.min.js"></script>
-<script src="/js/swipe.min.js" charset="utf-8"></script>
-<script src="/js/book.js" charset="utf-8"></script>
+<script src="{{ URL('/') }}/js/jquery-1.11.2.min.js"></script>
+<script src="{{ URL('/') }}/js/swipe.min.js" charset="utf-8"></script>
+<script src="{{ URL('/') }}/js/book.js" charset="utf-8"></script>
 @yield('my-js')
 </html>
